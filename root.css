@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: Valorant;
+    src: url(assets/Valorant.ttf) format(ttf);
+}
+
+:root {
+    --pri-color: #FF4655;
+    --sec-color: #FFFFFF;
+    --ter-color: #000000
+}
+
+.pri-font {
+    font-family: Valorant, Arial, Helvetica, sans-serif;
+    line-height: 0.9;
+}
+
+.sec-font {
+    font-family: Audiowide, Arial, Helvetica, sans-serif;
+}
+
+.heading-pri {
+    font-size: 1.4rem;
+}
+
+.heading-ter {
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width: 576px) {
+    .heading-ter {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+@media screen and (min-width: 992px) {
+    .heading-ter {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .heading-ter {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    
+}
