@@ -18,7 +18,7 @@
 }
 
 .hero-text-container {
-    height: 90vh;
+    height: 88vh;
 }
 
 .hero-heading-divided-image-container {
@@ -37,6 +37,7 @@
 
 .scroll-arrow {
     height: 14px;
+    margin-top: 10px;
     margin-bottom: 20px;
     background: url(assets/scroll-arrow.svg);
     background-position: center;
@@ -47,7 +48,7 @@
 }
 
 .thumbnail-element-container {
-    height: 300px;
+    height: auto;
 }
 
 .thumbnail-element-heading-text {
@@ -64,6 +65,53 @@
     color: var(--ter-color);
 }
 
+.fee-type-container {
+    width: 10rem;
+    background-color: var(--pri-color);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.fee-type-container::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    background: url(assets/bullet-point.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -70px;
+    top: 36px;
+
+}
+
+.fee-price {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.note-fee-text  {
+    color: var(--ter-color);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exact-5 {
+    color: var(--ter-color);
+}
+
+.note , .exact-5 {
+    font-weight: 700;
+}
+
+.note {
+    color: var(--pri-color);
+}
 .thumbnail-element-left-containter {
     background-color: var(--pri-color);
 }
@@ -110,6 +158,11 @@
         visibility: visible;
         height: 400px;
     }
+
+    .note-fee-text  {
+        color: var(--ter-color);
+        margin: 0px;
+    }
 }
 
 
@@ -125,6 +178,11 @@
     .scroll-info-text {
         padding-top: 60px; 
     }
+
+    .width-100 {
+        width: 0px;
+    }
+
 }
 
 
