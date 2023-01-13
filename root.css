@@ -13,7 +13,19 @@
 :root {
     --pri-color: #FF4655;
     --sec-color: #FFFFFF;
-    --ter-color: #000000
+    --ter-color: #000000;
+}
+
+.pri-color {
+    color: var(--pri-color);
+}
+
+.sec-color {
+    color: var(--sec-color);
+}
+
+.ter-color {
+    color: var(--ter-color);
 }
 
 .pri-font {
@@ -37,6 +49,33 @@
     font-size: 1.2rem;
 }
 
+a:hover , a:visited , a:focus , a:link , a:active{
+    color: var(--pri-color);
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Participate CTA Component */
+.participate-cta-container {
+    margin-top: 1rem;
+}
+
+.participate-cta-text {
+    background-color: var(--sec-color);
+    border: 0.125rem solid var(--pri-color);
+    border-radius: 0.5rem;
+    box-shadow: 12px 12px 57px 9px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.participate-cta-text:hover {
+    background-color: var(--pri-color);
+    color: var(--sec-color);
+    border-radius: 0.5rem;
+    box-shadow: 12px 12px 57px 9px rgba(0, 0, 0, 0.25);
+}
+
 @media screen and (min-width: 576px) {
     .heading-ter {
         font-size: 1.4rem;
@@ -44,7 +83,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {   
 
 }
 
@@ -52,6 +91,11 @@
 @media screen and (min-width: 992px) {
     .heading-ter {
         font-size: 1.7rem;
+    }
+
+    /* Participate CTA Component */
+    .participate-cta-container {
+        margin-top: 4rem;
     }
 }
 

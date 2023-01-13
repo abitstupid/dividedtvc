@@ -112,6 +112,7 @@
 .note {
     color: var(--pri-color);
 }
+
 .thumbnail-element-left-containter {
     background-color: var(--pri-color);
 }
@@ -150,13 +151,13 @@
     }
 
     .thumbnail-element-container {
-        height: 450px;
-    }
+        height: 520px;
+    } 
 
     .thumbnail-element-img {
         position: relative;
         visibility: visible;
-        height: 400px;
+        height: 470px;
     }
 
     .note-fee-text  {
