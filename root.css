@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: Valorant;
-    src: url(assets/Valorant.ttf) format(ttf);
+    src: url(assets/Valorant.ttf) format(ttf) url(assets/Valorant.woff) format(woff);
 }
 
 :root {
