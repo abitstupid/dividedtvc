@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width intial-scale=1.0">
         <meta name="author" content="Valorant Championship Una">
         <meta name="description" content="Valorant Championship is a Gaming ">
-        <link rel="icon" href="assets/logo-divided.png" type="image/x-icon"
+        <link rel="icon" href="assets/logo-divided.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- HERO Section -->
         <section class="container-fluid hero">
 
             <div class="row invisible position-absolute hero-heading-divided-container">
@@ -33,18 +34,26 @@
                 <div class="col-12 my-0 align-self-end hero-heading-divided-image-container">
                     <img src="assets/divided-valorant-championship.png" alt="DIVIDED: The Valorant Championship" class="col-12 col-sm-8 col-md-7  img-fluid align-self-end hero-heading-divided-image">
                 </div>
-                <p class="col-12 position-relative my-0 pri-font sec-font heading-ter hero-championship-text">The Valorant Championship</p>
-                <p class="col-12 my-0 align-self-end pri-font  sec-font heading-ter scroll-info-text">
+                <p class="col-12 position-relative my-0 pri-font sec-font ter-heading hero-championship-text">The Valorant Championship</p>
+                <p class="col-12 my-0 align-self-end pri-font  sec-font ter-heading scroll-info-text">
                     Scroll To Read More
                 </p>
                 <div class="col-12 position-relative align-self-end scroll-arrow"></div>
             </div>
         </section>
 
-        <section class="container-fluid rules-fee-container thumbnail-element-container">
+        <!-- Anouncements -->
+        <section class="col-12 my-4 announment-heading-red-container">
+            <h2 class="text-center sec-font sec-color pri-heading">
+                Tournament Dates will be announced soon
+            </h2>
+        </section>
+
+        <!-- ENTRY FEE -->
+        <section class="container-fluid ps-md-5 rules-fee-container thumbnail-element-container">
             <article class="row clearfix">
-            <header class="my-4">
-                <h2 class=" col-12 my-0 sec-font heading-pri rules-fee-heading-text thumbnail-element-heading-text">Rules and Entry Fee</h2>
+            <header class="px-0">
+                <h2 class=" col-12 my-0 ps-5 ps-md-0 sec-font pri-heading rules-fee-heading-text thumbnail-element-heading-text">Entry Fee</h2>
             </header>
             <main class="col-12 rules-fee-body-text-container thumbnail-element-body-text-container">
                 <img src="assets/jet-thumbnail-img.png" alt="Jett holding a Knife" class=" float-end img-fluid rules-thumbnail-img thumbnail-element-img">
@@ -62,7 +71,7 @@
                 <p class="col-9 col-md-8 my-3 text-center ter-font note-fee-text"><span class="note">NOTE:</span> One team should have <span class="exact-5">exact 5</span> team members.
                     Otherwise Individual charges apply.</p> 
                 <div class="col-12 col-md-7 col-lg-8 py-3 participate-cta-container">
-                    <a href="" class="ter-font participate-cta-link">
+                    <a href="participate-here.html" class="ter-font participate-cta-link">
                         <p class="col-8 col-sm-5 col-md-5 col-xl-4 text-center mx-auto p-3 pri-color participate-cta-text">Participate Here</p>
                     </a>
                 </div>
@@ -71,17 +80,73 @@
             </article>
             </section>
 
-            <!-- <section class="container-fluid ps-5 ps-md-0 about-container thumbnail-element-container thumbnail-element-left-containter">
-                <article class="row clearfix">
-                <header class="text-md-end my-3 px-md-5">
-                    <h2 class=" col-12 my-0 sec-font heading-pri about-heading-text thumbnail-element-heading-text thumbnail-element-left-heading-text">About Championship</h2>
-                </header>
-                <main class="col-12 about-body-text-container thumbnail-element-body-text-container">
-                    <img src="assets/sova-thumbnail-img.png" alt="Sova with Operator" class=" float-start about-thumbnail-img thumbnail-element-img">
-                    <p class="col-11  about-body-text thumbnail-element-body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed nemo, nihil quis consectetur quisquam suscipit minima perferendis laborum, possimus distinctio qui alias in repellendus rerum eius laudantium adipisci veniam.
-                    </p>
-                </main>
-                </article> -->
+            <!-- RULES -->
+            <section class="container-fluid image-component-container image-component-left-container">
+                <article class="row ter-color image-component-row">
+                    <h2 class="col-12 ps-sm-5 my-3 text-start sec-font pri-heading sec-color image-component-heading">Rules</h2>
+                    <div class="col-0 col-md-4 px-0 ter-color image-component-img-container">
+                        <img src="assets/sova-thumbnail-img.png" alt="Sova holding Operator" class="float-start image-component-img image-component-right-img" />
+                    </div>
+                    <div class="col-12 col-md-6 my-auto ps-sm-5 ter-font pri-color image-component-body-container">
+                        <dl>
+                            <dt class="my-2 ter-heading">Team for Individuals</dt>
+                            <dd>Individual people who doesn’t have a team will be assigned a team. Team matching will be optimized so that a team doesn’t end up with either all low-rank player or all high-rank players.</dd>
+                            <dt class="my-2 ter-heading">Tournaments</dt>
+                            <dd>Competitive : If the teams are less the Tournament will be of Round-Robin nature. Every team will play every team. For every :
+                                <br />
+                                <span class="bold-text">WIN : 2 scores</span>
+                                <br />
+                                <span class="bold-text">LOSE: 0 scores</span>
+                                <br />
+                                <span class="bold-text">DRAW: 1 score each</span>
+                                <br />
+                                Otherwise it’ll be an elimination tournament.
+                            </dd>
+                            <dd>
+                                <span class="bold-text">DeathMatch</span> : There will also be 10 people deathmatch. Which is an individual programme.
+                            </dd>
+                        </dl>
+                    </div>
+                </article>
             </section>
+
+            <!-- ABOUT CHAMPIONSHIP -->
+            <section class="container-fluid image-component-container image-component-right-container">
+                <article class="row  ter-color image-component-row">
+                    <h2 class="col-12 my-3 ps-sm-5 text-start sec-font pri-heading pri-color image-component-heading">About Championship</h2>
+                    <div class="col-12 col-md-8 ps-sm-5  my-auto ter-color ter-font image-component-body-container">
+                        <p class="about-championship-text-1">
+                            This championship is organized by two Individuals who share a keen interest for gaming. Especially <span class="bold-text">VALORANT</span>.
+                        </p>
+                        <p class="ter-font about-championship-text-2">
+                            We are not any professionals, and we are organizing this gaming tournament for the very first time, so if we do any mistakes, bear with us. Also a sincere apology in advance for any mistakes.
+                        </p>
+                        <p class=" ter-font bold-text about-championship-text-3">
+                            If you have any suggestions or questions regarding the championship, feel free to submit them. 
+                        </p>
+
+                        <form action="https://formsubmit.co/dividedvalorant@gmail.com" method="POST">
+                                <fieldset>
+                                    <p class="row px-2">
+                                        <input type="hidden" name="_captcha" value="true">
+                                        <label for="write-email" style="display: none;">Your Email</label>
+                                        <input type="email" id="write-email" class="col-11 col-lg-10 col mx-auto mx-md-0 mb-3 p-3" name="write-email" placeholder="Your e-mail here..." required>
+                                        <label for="submitquery" style="display: none;">Submit Your Query:</label>
+                                        <input type="text" id="writequery" class="col-11 col-md-7 mx-auto mx-md-0 p-3" name="submitquery" placeholder="Your query here..." required>
+                                        <input type="submit" id="submitquery" class="col-5 col-sm-4 col-lg-3 mx-auto mx-md-0 p-3 bold-text pri-color" value="Shoot It">
+                                    </p>
+                                </fieldset>
+                        </form>
+                        <p class="col-12 text-center social-media-btn-container">
+                            or DM: <a href="https://www.instagram.com/dividedtvc/" alt="Divided TVC's Instagram Page" target="_blank"><span class="bold-text ter-font pri-color social-instagram-link">@dividedtvc</span></a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 px-0 text-center ter-color image-component-img-container">
+                        <img src="assets/skye-thumbnail-img.png" alt="Sova holding Operator" class=" image-component-img image-component-left-img" />
+                    </div>
+                </article>
+            </section>
+
+            <span class="mt-5 invisible">&nbsp</span>
     </body>
 </html>

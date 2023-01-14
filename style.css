@@ -47,22 +47,18 @@
     animation: scroll-arrow 1s infinite;
 }
 
-.thumbnail-element-container {
+.rules-fee-container {
     height: auto;
 }
 
-.thumbnail-element-heading-text {
+.rules-fee-heading-text {
     color: var(--pri-color);
 }
 
-.thumbnail-element-img {
+.rules-thumbnail-img {
     position: absolute;
     visibility: hidden;
     height: 0px;
-}
-
-.thumbnail-element-body-text{
-    color: var(--ter-color);
 }
 
 .fee-type-container {
@@ -113,14 +109,21 @@
     color: var(--pri-color);
 }
 
-.thumbnail-element-left-containter {
-    background-color: var(--pri-color);
+.image-component-right-img {
+    height: 390px;
 }
 
-.thumbnail-element-left-heading-text {
-    color: var(--sec-color);
+.image-component-left-img {
+    height: 390px;
 }
 
+.social-instagram-link {
+    color: var(--pri-color) !important;
+    padding-left: 25px;
+    position: relative;
+    background: url(assets/instagram-icon.svg) no-repeat 5% 100%;
+    background-size: contain;
+}
 
 @media screen and (max-height: 576px) {
     .hero {
@@ -141,9 +144,7 @@
 }
 
 @media screen and (min-width: 576px) {
-    .rules-fee-container {
-        padding-left: 3rem;
-    }
+
 }
 
 
@@ -152,11 +153,11 @@
         background-image: url(assets/hero-valorant-desktop.png);
     }
 
-    .thumbnail-element-container {
+    .rules-fee-container {
         height: 520px;
     }
 
-    .thumbnail-element-img {
+    .rules-thumbnail-img {
         position: relative;
         visibility: visible;
         height: 470px;

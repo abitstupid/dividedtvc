@@ -5,6 +5,16 @@
     color: #ffffff;
 }
 
+*::selection {
+    background-color: var(--ter-color) !important;
+    color: var(--pri-color) !important;
+}
+
+*::-moz-selection {
+    background-color: var(--ter-color) !important;
+    color: var(--pri-color) !important;
+}
+
 @font-face {
     font-family: Valorant;
     src: url(assets/Valorant.ttf) format(ttf) , url(assets/Valorant.woff) format(woff);
@@ -13,8 +23,17 @@
 :root {
     --pri-color: #FF4655;
     --sec-color: #FFFFFF;
-    --ter-color: #000000;
+    --ter-color: #393939;
+    --bold-text: bold
 }
+
+
+/* font styles and text decoration */
+.bold-text {
+    font-weight: bold;
+}
+
+/* colors */
 
 .pri-color {
     color: var(--pri-color);
@@ -27,6 +46,7 @@
 .ter-color {
     color: var(--ter-color);
 }
+ /* fonts */
 
 .pri-font {
     font-family: Valorant, Arial, Helvetica, sans-serif;
@@ -41,19 +61,29 @@
     font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
-.heading-pri {
-    font-size: 1.4rem;
+/* heading size */
+
+.pri-heading {
+    font-size: 1.7em;
 }
 
-.heading-ter {
+
+.ter-heading {
     font-size: 1.2rem;
 }
 
+/* link formatting */
 a:hover , a:visited , a:focus , a:link , a:active{
     color: var(--pri-color);
     font-style: normal;
     font-weight: 600;
     text-decoration: none;
+}
+
+/* announcements bar */
+
+.announment-heading-red-container {
+    background-color: var(--pri-color);
 }
 
 /* Participate CTA Component */
@@ -65,7 +95,7 @@ a:hover , a:visited , a:focus , a:link , a:active{
     background-color: var(--sec-color);
     border: 0.125rem solid var(--pri-color);
     border-radius: 0.5rem;
-    box-shadow: 12px 12px 57px 9px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.23);
     cursor: pointer;
 }
 
@@ -76,6 +106,65 @@ a:hover , a:visited , a:focus , a:link , a:active{
     box-shadow: 12px 12px 57px 9px rgba(0, 0, 0, 0.25);
 }
 
+/* Submit Query Input */
+
+input#writequery , input#submitquery {
+    background-color: var(--sec-color);
+    /* box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.23); */
+    cursor: pointer;
+    
+}
+
+input#writequery , input#write-email {
+    border-radius: 0.5rem;
+    border-width: 0.125rem;
+    border-color: var(--pri-color);
+    border-style: solid;
+    cursor: text;
+}
+
+input#submitquery {
+    border-radius: 0.5rem;
+    border-width: 0.125rem;
+    border-color: var(--pri-color);
+    border-style: solid;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+input#writequery:active , input#writequery:focus , input#writequery:focus-visible , input#write-email:focus-visible{
+    outline: none;
+    background-color: #ffcdd1;
+}
+
+input#submitquery:active  {
+    background-color: var(--pri-color);
+    font-weight: bold;
+    color: var(--sec-color);
+}
+
+
+/* image component */
+.image-component-img-container , .image-component-img {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+/* Left Image Component */
+.image-component-left-container {
+    background-color: 
+    var(--pri-color);
+}
+
+/* right image component */
+
+.image-component-right-container .image-component-body-container * {
+    color: inherit;
+}
+
+
+
 @media screen and (min-width: 576px) {
     .heading-ter {
         font-size: 1.4rem;
@@ -84,6 +173,26 @@ a:hover , a:visited , a:focus , a:link , a:active{
 
 
 @media screen and (min-width: 768px) {   
+    .image-component-img-container , .image-component-img {
+        position: static;
+        visibility: visible;
+        display: block;
+    }
+
+    input#writequery {
+        border-radius: 0.5rem 0px 0px 0.5rem;
+        border-width: 0.125rem 0px 0.125rem 0.125rem;
+        border-color: var(--pri-color);
+        border-style: solid;
+    }
+    
+    input#submitquery {
+        border-radius: 0rem 0.5rem 0.5rem 0px;
+        border-width: 0.125rem 0.125rem 0.125rem 0.125rem;
+        border-color: var(--pri-color);
+        border-style: solid;
+        margin-top: 0rem;
+    }
 
 }
 
