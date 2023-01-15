@@ -1,3 +1,5 @@
+@import url(css/sidenav.css);
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -15,6 +17,26 @@
     color: var(--pri-color) !important;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #ffd0d4; 
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--pri-color); 
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--pri-color); 
+}
+
 @font-face {
     font-family: Valorant;
     src: url(assets/Valorant.ttf) format(ttf) , url(assets/Valorant.woff) format(woff);
@@ -24,7 +46,7 @@
     --pri-color: #FF4655;
     --sec-color: #FFFFFF;
     --ter-color: #393939;
-    --bold-text: bold
+    --bold-text: bold;
 }
 
 
